@@ -35,7 +35,8 @@ drwxr-xr-x 67 user user    4096 Jul 31 00:16 samples
 -rw-r--r--  1 user user      81 Jul 31 00:16 VERSION.txt
 ```
 
-In this folder, the two binaries I need are `dragonruby` and `dragonruby-publish`.
+In this folder, the two binaries I need are `dragonruby` and `dragonruby-publish`. The game you develop
+is in the `mygame` directory.
 
 The first one is used to run games and the other to publish games on itch.io or just to package them.
 
@@ -81,7 +82,7 @@ Let's say you have repo like this:
 You can run `./unpack_dragonruby.bash ~/Downloads/dragonruby.zip .` and it will copy the content of the zip
 to the current directory, without overwriting `mygame/`. Then you can run `./dragonruby mygame/`.
 
-## Ignore DragonRuby files
+### Ignore DragonRuby files
 
 Here is a sample gitignore from another project:
 
