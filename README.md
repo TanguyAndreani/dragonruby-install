@@ -68,3 +68,29 @@ You could do that in the readme with a badge, like that:
 Which would look like to:
 
 ![my badge](https://img.shields.io/badge/dragonruby-1.12%20\(a14978f\)-blueviolet)
+
+## Unpack DragonRuby in the current directory
+
+Let's say you have repo like this:
+
+```
+./
+  - mygame/
+```
+
+You can run `./unpack_dragonruby.bash ~/Downloads/dragonruby.zip .` and it will copy the content of the zip
+to the current directory, without overwriting `mygame/`. Then you can run `./dragonruby mygame/`.
+
+## Ignore DragonRuby files
+
+Here is a sample gitignore from another project:
+
+```gitignore
+*
+!mygame
+!README.md
+```
+
+In plain English: Ignore everything that isn't in the mygame directory.
+
+You can then add a normal gitignore in your `mygame` dir.
