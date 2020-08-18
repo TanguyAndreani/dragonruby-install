@@ -12,6 +12,8 @@ but I know that you can easily build for other platforms from Linux. (The comman
 does that by default.) It produces binaries for Linux, Windows, Mac, and even for web browsers and the 
 Pi.
 
+If you just want to run a game to see if it's really works, go check the [first example](#first-example).
+
 ## How to run games from sources?
 
 First you have to download DragonRuby. Then you should have access to an archive named
@@ -43,7 +45,7 @@ drwxr-xr-x 67 user user    4096 Jul 31 00:16 samples
 ```
 
 In this folder, the two binaries I need are `dragonruby` and `dragonruby-publish`. The game you develop
-is in the `mygame` directory.
+is in the `mygame` directory. You typically run a game by executing the command `./dragonruby mygame`.
 
 The first one is used to run games and the other to publish games on itch.io or just to package them.
 
@@ -51,10 +53,14 @@ But we won't copy those files outside of this directory. You can't do that becau
 other files in this directory, `.dragonruby/stubs` for example, which contains all the necessary files
 to package your games for linux, macosx, raspberrypi, windows and web browsers.
 
-As I understand it your supposed to develop like this:
+Also builds are produced relatively to those binaries, not relatively to the execution directory.
+Which means that if you have a centralized installation of DragonRuby, the `builds` directory is
+going to get created there. Which is probably not what you want.
+
+As I understand it you're supposed to develop like this:
 
 1. Duplicate the dragonruby whole folder
-2. Start developing your game in `mygame`
+2. Start developing your game in `mygame`; optionnaly making it a github repo
 3. Run the game by running commands like `./dragonruby mygame`
 4. Edit metadatas in `mygame/metadata`
 5. Publish the game with `./dragonruby-publish`
@@ -64,18 +70,6 @@ But I wouldn't recommend it. A potential caveat is when two games require a diff
 
 So I recommend to copy everytime, and then when there is an update to the engine you update it for
 every project and check that it still works, fix things otherwise.
-
-## Advertising which version of dragonruby is used by your project.
-
-You could do that in the readme with a badge, like that:
-
-```
-![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
-```
-
-Which would look like to:
-
-![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
 
 ## Unpack DragonRuby in the current directory
 
@@ -139,3 +133,17 @@ git clone https://github.com/sojastar/education_sentimentale mygame
 unpack_dragonruby ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
 ./dragonruby mygame
 ```
+
+## Advertising which version of dragonruby is used by your project.
+
+You could do that in the readme with a badge, like that:
+
+```
+![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
+```
+
+Which would look like to:
+
+![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
+
+
