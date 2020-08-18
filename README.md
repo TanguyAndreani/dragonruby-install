@@ -98,6 +98,9 @@ You can then add a normal gitignore in your `mygame` dir.
 
 ## Let's try it on real games
 
+I assume that you downloaded DragonRuby from itch.io and that you have access to a file
+named `dragonruby-gtk-linux-amd64.zip` which is, in my examples, located in `~/Downloads`.
+
 ### First example
 
 First, we'll try to run a [simple parallax](https://github.com/tanguyandreani/dragonruby-parallax) that I made.
