@@ -70,12 +70,12 @@ every project and check that it still works, fix things otherwise.
 You could do that in the readme with a badge, like that:
 
 ```
-![my badge](https://img.shields.io/badge/dragonruby-1.12%20(a14978f)-blueviolet)
+![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
 ```
 
 Which would look like to:
 
-![my badge](https://img.shields.io/badge/dragonruby-1.12%20\(a14978f\)-blueviolet)
+![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
 
 ## Unpack DragonRuby in the current directory
 
