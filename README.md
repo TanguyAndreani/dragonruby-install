@@ -3,14 +3,14 @@
 [DragonRuby](https://dragonruby.itch.io)
 
 Remember that you can download the engine for free under certain conditions which you
-probably match if you happend to be a student.
+probably match if you happen to be a student.
 
 ## How to run games from sources?
 
 First you have to download DragonRuby. Then you should have access to an archive named
 like `dragonruby-gtk-linux-amd64.zip`.
 
-When you unzip this archive, you get this folder:
+When you unzip this archive, you get this folder (or at least something similar):
 
 ```
 ls -la dragonruby-linux-amd64/
