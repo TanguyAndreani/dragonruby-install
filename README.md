@@ -5,6 +5,13 @@
 Remember that you can download the engine for free under certain conditions which you
 probably match if you happen to be a student.
 
+## Who is this tutorial for?
+
+For now it's for me, for you when it's readable. I don't know how to use DragonRuby outside of Linux, 
+but I know that you can easily build for other platforms from Linux. (The command `dragonruby-publish` 
+does that by default.) It produces binaries for Linux, Windows, Mac, and even for web browsers and the 
+Pi.
+
 ## How to run games from sources?
 
 First you have to download DragonRuby. Then you should have access to an archive named
