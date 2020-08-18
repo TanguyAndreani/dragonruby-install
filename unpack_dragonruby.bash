@@ -26,6 +26,6 @@ unzip ${ZIP}
 
 rm -rv ${DRDIR}/{mygame,samples}
 
-mv ${DRDIR}/* ${DRDIR}/.dragonruby ${INSTALLDIR}/
+mv ${DRDIR}/{*,.dragonruby} ${INSTALLDIR}/
 
 rm -rf ${DRDIR}
