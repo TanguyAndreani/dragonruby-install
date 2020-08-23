@@ -8,7 +8,6 @@ named `dragonruby-gtk-linux-amd64.zip` which is, in my examples, located in `~/D
 ## Installation process
 
 ```bash
-cd /tmp
 git clone https://github.com/TanguyAndreani/dragonruby-install
 cd dragonruby-install
 sudo make install # just copies the script in a system directory
@@ -21,7 +20,6 @@ First, we'll try to run a [simple parallax](https://github.com/tanguyandreani/dr
 If you look at the directory structure, it's just a `mygame` directory.
 
 ```bash
-cd /tmp
 git clone https://github.com/tanguyandreani/dragonruby-parallax
 cd dragonruby-parallax
 dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .
@@ -32,18 +30,28 @@ dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .
 
 This time, we'll look at the game [Education sentimentale](https://github.com/sojastar/education_sentimentale).
 
-This project is a bit different than the parallax you just ran, it's more complex, of course, it's a real game.
-But what is really different here is that the repo does not contain a `mygame` directory, *it is* one.
+Here the repo does not contain a `mygame` directory, *it is* one; ie. the app folder is top-level.
 
 So you have to copy Dragonruby outside of it, like this for example:
 
 ```bash
-cd /tmp
-mkdir education_sentimentale
-cd education_sentimentale
-git clone https://github.com/sojastar/education_sentimentale mygame
+mkdir dr_games
+cd dr_games
+git clone https://github.com/sojastar/education_sentimentale
 dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
-./dragonruby mygame
+./dragonruby education_sentimentale
+```
+
+Then you can clone as many games as you want in this folder.
+
+### Typical workflows
+
+1. Always unpack dragonruby in a single directory and clone games in it.
+2. Or copy or link this script in your project and have a directory structure that looks like this:
+
+```
+mygame/
+dragonruby-install.bash
 ```
 
 ### Ignore DragonRuby files
