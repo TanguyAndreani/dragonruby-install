@@ -1,16 +1,11 @@
-# dragonruby-tutorial
+# dragonruby-install
 
-[DragonRuby](https://dragonruby.itch.io)
+A tool to unpack DragonRuby in the current directory, where your `mygame` folder is.
 
-Remember that you can download the engine for free under certain conditions which you
-probably match if you happen to be a student.
-
-## Let's try it on real games
-
-I assume that you downloaded DragonRuby from itch.io and that you have access to a file
+I assume that you [downloaded DragonRuby from itch.io](https://dragonruby.itch.io) and that you have access to a file
 named `dragonruby-gtk-linux-amd64.zip` which is, in my examples, located in `~/Downloads`.
 
-### First example
+## First example
 
 First, we'll try to run a [simple parallax](https://github.com/tanguyandreani/dragonruby-parallax) that I made.
 
@@ -24,7 +19,7 @@ unpack_dragonruby ~/Downloads/dragonruby-gtk-linux-amd64.zip .
 ./dragonruby mygame
 ```
 
-### Second example
+## Second example
 
 This time, we'll look at the game [Education sentimentale](https://github.com/sojastar/education_sentimentale).
 
