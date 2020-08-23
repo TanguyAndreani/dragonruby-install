@@ -133,17 +133,3 @@ git clone https://github.com/sojastar/education_sentimentale mygame
 unpack_dragonruby ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
 ./dragonruby mygame
 ```
-
-## Advertising which version of dragonruby is used by your project.
-
-You could do that in the readme with a badge, like that:
-
-```
-![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
-```
-
-Which would look like to:
-
-![my badge](https://img.shields.io/badge/dragonruby-1.12-blueviolet)
-
-
