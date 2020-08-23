@@ -5,17 +5,26 @@ A tool to unpack DragonRuby in the current directory, where your `mygame` folder
 I assume that you [downloaded DragonRuby from itch.io](https://dragonruby.itch.io) and that you have access to a file
 named `dragonruby-gtk-linux-amd64.zip` which is, in my examples, located in `~/Downloads`.
 
+## Installation process
+
+```bash
+cd /tmp
+git clone https://github.com/TanguyAndreani/dragonruby-install
+cd dragonruby-install
+sudo make install # just copies the script in a system directory
+```
+
 ## First example
 
 First, we'll try to run a [simple parallax](https://github.com/tanguyandreani/dragonruby-parallax) that I made.
 
-If you look at the directory structure, it's just a `mygame` dircetory.
+If you look at the directory structure, it's just a `mygame` directory.
 
 ```bash
 cd /tmp
 git clone https://github.com/tanguyandreani/dragonruby-parallax
 cd dragonruby-parallax
-unpack_dragonruby ~/Downloads/dragonruby-gtk-linux-amd64.zip .
+dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .
 ./dragonruby mygame
 ```
 
@@ -33,7 +42,7 @@ cd /tmp
 mkdir education_sentimentale
 cd education_sentimentale
 git clone https://github.com/sojastar/education_sentimentale mygame
-unpack_dragonruby ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
+dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
 ./dragonruby mygame
 ```
 
