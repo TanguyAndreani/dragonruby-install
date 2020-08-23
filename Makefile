@@ -1,4 +1,4 @@
 .PHONY: install
 install:
-	cp ./unpack_dragonruby.bash /usr/local/bin/unpack_dragonruby
-	chmod a+x /usr/local/bin/unpack_dragonruby
+	cp ./dragonruby-install.bash /usr/local/bin/dragonruby-install
+	chmod a+x /usr/local/bin/dragonruby-install
