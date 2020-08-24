@@ -20,19 +20,20 @@ First, we'll try to run a [simple parallax](https://github.com/tanguyandreani/dr
 If you look at the directory structure, it's just a `mygame` directory.
 
 ```bash
+mkdir dr_games
+cd dr_games
 git clone https://github.com/tanguyandreani/dragonruby-parallax
-cd dragonruby-parallax
 dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .
-./dragonruby mygame
+./dragonruby dragonruby-parallax
 ```
+
+Then you can clone as many games as you want in this folder.
+
+Typically, you type `./dragonruby [directory which contains the app/ folder]` to run a game.
 
 ## Second example
 
 This time, we'll look at the game [Education sentimentale](https://github.com/sojastar/education_sentimentale).
-
-Here the repo does not contain a `mygame` directory, *it is* one; ie. the app folder is top-level.
-
-So you have to copy Dragonruby outside of it, like this for example:
 
 ```bash
 mkdir dr_games
@@ -41,8 +42,6 @@ git clone https://github.com/sojastar/education_sentimentale
 dragonruby-install ~/Downloads/dragonruby-gtk-linux-amd64.zip .                                        
 ./dragonruby education_sentimentale
 ```
-
-Then you can clone as many games as you want in this folder.
 
 ### Typical workflows
 
